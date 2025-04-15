@@ -1,0 +1,25 @@
+* {
+    padding: 0;
+    margin: 0;
+
+}
+
+.bubbles {
+    width: 100dvh;
+    height: 100dvh;
+    background-color: paleturquoise;
+    
+}
+
+.bubble {
+    width: 10dvw;
+    height: 10dvw;
+    background-color: blue;
+    transition: background-color 1s, transform 1s;
+    border-radius: 50%;
+}
+
+.bubble:hover {
+    background-color: steelblue;
+    transform: scale(2)
+}
