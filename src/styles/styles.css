@@ -4,6 +4,10 @@
 
 }
 
+body {
+    overflow: hidden;
+}
+
 .bubbles {
     width: 100dvh;
     height: 100dvh;
@@ -17,9 +21,30 @@
     background-color: blue;
     transition: background-color 1s, transform 1s;
     border-radius: 50%;
+    animation: animationname 5s infinite linear;
+    display: flex; 
+    flex-flow: row wrap;
+    justify-content: space-around;
+    
 }
+
+/* .bubbles.nth-child (2,3){ 
+    animation: animationname 10s infinite linear;
+}  */
 
 .bubble:hover {
     background-color: steelblue;
     transform: scale(2)
+}
+
+
+@keyframes animationname {
+    0% {
+        /* bottom: -1000px; */
+        transform:translateY(0)
+    }
+    100% {
+        /* bottom: 1000px; */
+        transform: translateY(1000px);
+    }
 }
