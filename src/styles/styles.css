@@ -28,7 +28,7 @@ body {
     
 }
 
-/* .bubbles.nth-child (2,3){ 
+/* .bubbles:nth-child(even){ 
     animation: animationname 10s infinite linear;
 }  */
 
@@ -41,7 +41,7 @@ body {
 @keyframes animationname {
     0% {
         /* bottom: -1000px; */
-        transform:translateY(0)
+        transform:translateY(0px)
     }
     100% {
         /* bottom: 1000px; */
